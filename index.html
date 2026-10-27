@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Premium Ginger Wellness Products from Subic, Zambales. Shalabat Powder Drinks, Tea Bags, and Candy Drops.">
+
+<meta name="keywords"
+content="Shalabat,Ginger Tea,Ginger Drink,Candy Drops,Philippines">
+
+<meta name="author"
+content="Shalabat">
+
+<link
+rel="icon"
+type="image/png"
+href="images/logo.png">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#8B5E3C;
+    --secondary:#D4A373;
+    --accent:#F4C430;
+    --bg:#faf7f3;
+    --dark:#333;
+    --green:#4CAF50;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--dark);
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:var(--accent);
+    color:#000;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* GENERAL */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.7rem;
+    color:var(--primary);
+    margin-bottom:50px;
+}
+
+/* PRODUCTS */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+.card{
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+.card-body h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.card-body p{
+    line-height:1.7;
+    margin-bottom:15px;
+}
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#4CAF50;
+    margin-bottom:15px;
+}
+
+.card-body ul{
+    padding-left:20px;
+}
+
+.card-body li{
+    margin-bottom:8px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+    color:var(--green);
+    margin-bottom:10px;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+}
+
+
+.order-btn{
+    width:100%;
+    background:#8B5E3C;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:auto;
+    font-size:16px;
+    font-weight:600;
+}
+
+.order-btn:hover{
+    background:#6f472e;
+}
+
+
+/* ORDER FORM */
+
+.contact{
+    background:var(--primary);
+    color:white;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.contact p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.order-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.order-form button{
+    background:var(--accent);
+    border:none;
+    padding:15px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.order-form button:hover{
+    opacity:.9;
+}
+
+/* MULTIPLE PRODUCT ROWS */
+
+.product-row{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+    align-items:center;
+}
+
+.product-row select{
+    flex:3;
+}
+
+.product-row input{
+    flex:1;
+}
+
+.add-product-btn{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.add-product-btn:hover{
+    background:#3f9a43;
+}
+
+.remove-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.remove-btn:hover{
+    background:#b02a37;
+}
+
+.order-btn{
+    width:100%;
+    background:#8B5E3C;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:auto;
+    font-size:16px;
+    font-weight:600;
+}
+
+.order-btn:hover{
+    background:#6f472e;
+}
+
+
+#order-summary{
+    background:white;
+    color:#333;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+#order-summary h4{
+    color:#8B5E3C;
+    margin-bottom:10px;
+}
+
+#order-summary ul{
+    padding-left:20px;
+}
+
+/* FLOATING BUTTON */
+
+.floating-btn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:var(--green);
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    z-index:1000;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.product-row{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.product-row select,
+.product-row input,
+.product-row button{
+    width:100%;
+}
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    display:none;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">🍃 SHALABAT</div>
+
+<div class="menu-toggle" id="mobile-menu">
+☰
+</div>
+
+<nav class="nav-links" id="nav-links">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Order</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Wellness in Every Sip</h1>
+
+<p>
+Experience the natural goodness of premium ginger products crafted
+to bring comfort, refreshment, and wellness into everyday life.
+Proudly made in Subic, Zambales.
+</p>
+
+<a href="#products" class="btn">
+View Products
+</a>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="section-title">
+Our Products
+</h2>
+
+<div class="products-grid">
+
+<div class="card">
+<img src="images/powder.jpg" alt="Shalabat Powder Drink">
+
+<div class="card-body">
+<h3>Instant Powder Drink</h3>
+
+<p class="price">
+₱99 / Pack
+</p>
+
+<p>
+A delicious ginger beverage that's quick to prepare and perfect any time of day.
+</p>
+
+<ul>
+<li>✅ Made with real ginger</li>
+<li>✅ Easy to prepare</li>
+<li>✅ Delicious and refreshing</li>
+<li>✅ Wellness in every sip</li>
+</ul>
+
+<button
+class="order-btn"
+onclick="selectProduct('Shalabat Powder Drink')">
+
+Order This Product
+
+</button>
+
+</div>
+</div>
+
+<div class="card">
+<img src="images/teabag.jpg" alt="Shalabat Tea">
+
+<div class="card-body">
+<h3>Shalabat Tea Bag</h3>
+
+<p class="price">
+₱89 / Box
+</p>
+
+
+<ul>
+<li>✅ Quick and convenient brewing</li>
+<li>✅ Relaxing taste</li>
+<li>✅ Daily wellness companion</li>
+<li>✅ Premium ginger blend</li>
+</ul>
+
+<button
+class="order-btn"
+onclick="selectProduct('Shalabat Tea Bag')">
+
+Order This Product
+
+</button>
+
+</div>
+</div>
+
+<div class="card">
+<img src="images/candy.jpg" alt="Shalabat Candy">
+
+<div class="card-body">
+<h3>Candy Drops</h3>
+
+<p class="price">
+₱79 / Pack
+</p>
+
+<ul>
+<li>✅ Great tasting</li>
+<li>✅ Travel friendly</li>
+<li>✅ Made with real ginger</li>
+<li>✅ Anytime enjoyment</li>
+</ul>
+
+<button
+class="order-btn"
+onclick="selectProduct('Shalabat Candy Drops')">
+
+Order This Product
+
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Why Choose Shalabat?
+</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>100% Real Ginger</h3>
+<p>Natural ginger goodness in every product.</p>
+</div>
+
+<div class="feature-box">
+<h3>Natural Ingredients</h3>
+<p>Clean labels and carefully selected ingredients.</p>
+</div>
+
+<div class="feature-box">
+<h3>Proudly Filipino</h3>
+<p>Locally made in Subic, Zambales.</p>
+</div>
+
+<div class="feature-box">
+<h3>Quality Assured</h3>
+<p>Crafted for flavor, freshness, and wellness.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2 class="section-title">
+About Shalabat
+</h2>
+
+<p>
+Shalabat is dedicated to bringing the natural benefits of ginger to modern lifestyles.
+From instant beverages and soothing tea bags to flavorful candy drops,
+our mission is to create delicious products that promote wellness while
+celebrating authentic Filipino craftsmanship.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Customer Reviews
+</h2>
+
+<div class="features">
+
+<div class="feature-box">
+
+⭐⭐⭐⭐⭐
+
+<p>
+"The ginger drink is very refreshing and easy to prepare."
+</p>
+
+</div>
+
+<div class="feature-box">
+
+⭐⭐⭐⭐⭐
+
+<p>
+"I love the tea bags. Perfect for relaxing after work."
+</p>
+
+</div>
+
+<div class="feature-box">
+
+⭐⭐⭐⭐⭐
+
+<p>
+"The candy drops are delicious and convenient to carry."
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Place Your Order</h2>
+
+<p>
+Fill out the form below and we will contact you regarding your order.
+</p>
+
+<form
+class="order-form"
+action="https://formspree.io/f/xljjdgdj"
+method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+name="phone"
+placeholder="Mobile Number"
+required>
+
+<div id="product-list">
+<div class="product-row">
+
+<select
+name="product[]"
+required
+onchange="updateSummary()">
+
+<option value="">
+Select Product
+</option>
+
+<option value="Shalabat Powder Drink">
+Shalabat Powder Drink
+</option>
+
+<option value="Shalabat Tea Bag">
+Shalabat Tea Bag
+</option>
+
+<option value="Shalabat Candy Drops">
+Shalabat Candy Drops
+</option>
+
+</select>
+
+<input
+type="number"
+name="quantity[]"
+min="1"
+placeholder="Qty"
+required
+oninput="updateSummary()">
+
+<button
+type="button"
+class="remove-btn"
+onclick="removeProduct(this)">
+
+🗑 Remove
+
+</button>
+
+</div>
+
+</div>
+
+
+<button
+type="button"
+class="add-product-btn"
+onclick="addProduct()">
+
+➕ Add Another Product
+
+</button>
+
+<textarea
+name="message"
+rows="5"
+placeholder="Additional Notes">
+</textarea>
+
+
+<div id="order-summary"></div>
+
+<button type="submit">
+    Submit Order
+</button>
+
+
+</form>
+
+</section>
+
+<div style="text-align:center;padding:30px;">
+
+<a
+href="https://facebook.com"
+target="_blank"
+class="btn">
+
+Facebook Page
+
+</a>
+
+</div>
+<footer>
+
+© 2026 SHALABAT Premium Ginger Wellness Products | Made in Subic, Zambales
+
+<div class="contact-info">
+
+<h3>Contact Us</h3>
+
+<p>📞 0930-179-9802</p>
+
+<p>📧 shalabat2026@gmail.com</p>
+
+<p>📍 Subic, Zambales, Philippines</p>
+
+</div>
+</footer>
+
+<a
+href="#contact"
+class="floating-btn">
+🛒 Order Now
+</a>
+
+<script>
+
+const mobileMenu =
+document.getElementById("mobile-menu");
+
+const navLinks =
+document.getElementById("nav-links");
+
+mobileMenu.addEventListener("click", function(){
+
+navLinks.classList.toggle("active");
+
+});
+
+function selectProduct(productName){
+
+    document.getElementById("contact")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+    const selects =
+    document.querySelectorAll(
+        '#product-list select'
+
+
+    );
+
+    let emptySelect = null;
+
+    selects.forEach(select => {
+
+        if(select.value === ""){
+            emptySelect = select;
+        }
+
+    });
+
+    if(emptySelect){
+
+        emptySelect.value = productName;
+
+    }else{
+
+        addProduct();
+
+        const rows =
+        document.querySelectorAll(
+            '#product-list select'
+        );
+
+        rows[rows.length-1].value =
+        productName;
+
+    }
+updateSummary();
+}
+
+function addProduct(){
+
+    const container =
+    document.getElementById("product-list");
+
+    const row =
+    document.createElement("div");
+
+    row.className =
+    "product-row";
+
+    row.innerHTML = `
+
+<select
+name="product[]"
+required
+onchange="updateSummary()">
+
+    <option value="">
+    Select Product
+    </option>
+
+    <option value="Shalabat Powder Drink">
+    Shalabat Powder Drink
+    </option>
+
+    <option value="Shalabat Tea Bag">
+    Shalabat Tea Bag
+    </option>
+
+    <option value="Shalabat Candy Drops">
+    Shalabat Candy Drops
+    </option>
+
+</select>
+
+<input
+type="number"
+name="quantity[]"
+min="1"
+placeholder="Qty"
+required
+oninput="updateSummary()">
+
+<button
+type="button"
+class="remove-btn"
+onclick="removeProduct(this)">
+🗑 Remove
+</button>
+
+`;
+
+container.appendChild(row);
+
+updateSummary();
+
+}
+
+function removeProduct(button){
+
+    const rows =
+    document.querySelectorAll(".product-row");
+
+    if(rows.length > 1){
+
+        button.parentElement.remove();
+
+        updateSummary();
+
+    }else{
+
+        alert(
+            "At least one product is required."
+        );
+
+    }
+
+}
+
+function updateSummary(){
+
+    const rows =
+    document.querySelectorAll(".product-row");
+
+    let html =
+    "<h4>Order Summary</h4><ul>";
+
+    rows.forEach(row => {
+
+        const product =
+        row.querySelector("select").value;
+
+        const qty =
+        row.querySelector(
+            'input[name="quantity[]"]'
+        ).value;
+
+        if(product){
+
+            html +=
+            `<li>${qty || 1} × ${product}</li>`;
+
+        }
+
+    });
+
+    html += "</ul>";
+
+    document.getElementById(
+        "order-summary"
+    ).innerHTML = html;
+
+}
+
+
+</script>
+
+</body>
+</html>
